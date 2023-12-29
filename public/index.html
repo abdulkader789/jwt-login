@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="register">
+            <h3>Register Form</h3>
+            <fieldset>
+                <input id="user-name" placeholder="Your Full Name" type="text" tabindex="1" required autofocus
+                    autocomplete="on">
+            </fieldset>
+            <fieldset>
+                <input id="register-email" placeholder="Your email" type="text" tabindex="1" required autofocus
+                    autocomplete="on">
+            </fieldset>
+            <fieldset>
+                <input id="register-password" placeholder="Your passowrd" type="password" tabindex="1" required
+                    autofocus autocomplete="current-password">
+            </fieldset>
+
+            <!-- <fieldset>
+                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Email Address" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+            </fieldset>
+            <fieldset>
+                <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+            </fieldset> -->
+            <fieldset>
+                <button name="submit" type="submit" id="btn-register" data-submit="...Sending">Submit</button>
+            </fieldset>
+            <p class="redirect">Already have an account?<a href="/login.html">Login</a></p>
+
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
