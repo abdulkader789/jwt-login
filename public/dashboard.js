@@ -22,9 +22,16 @@ const populateQuote = async () => {
         console.log('quote from dashboard', data);
 
         if (data.status === 'ok') {
-            const quote = data.quote;
-            console.log('Quote:', quote);
-            quoteText.innerText = quote
+            if (data.quote) {
+                const quote = data.quote;
+                console.log('Quote:', quote);
+                quoteText.innerText = quote
+
+            } else {
+                quoteText.innerText = 'No Quote Created'
+
+            }
+
 
         } else {
             console.log('Error:', data.error);
